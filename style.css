@@ -1,0 +1,63 @@
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: hsl(257, 40%, 49%) url("images/bg-desktop.svg");
+    background-size: cover; 
+    height: 100vh;
+    color: #fff;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 90%;
+}
+main{
+    display: flex;
+    gap: 7em;
+    height: 85%;
+    width: 90%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2em;
+    width: 60%;
+    margin-bottom: .7em;
+}
+p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    width: 70%;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+button{
+    color: hsl(257, 40%, 49%);
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    border:none;
+    border-radius: 3em;
+    height: 6.5%;
+    width: 20%;
+}
+.text-container{
+    margin-top: -5em;
+}
