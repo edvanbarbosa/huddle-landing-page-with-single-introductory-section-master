@@ -19,14 +19,14 @@ body{
 header{
     display: flex;
     align-items: center;
-    height: 15%;
+    height: 10%;
     width: 90%;
 }
 main{
     display: flex;
     gap: 7em;
-    height: 85%;
-    width: 90%;
+    height: 75%;
+    width: 80%;
 }
 section{
     display: flex;
@@ -38,18 +38,19 @@ h1{
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     line-height: 1.2em;
-    width: 60%;
+    width: 80%;
     margin-bottom: .7em;
 }
 p{
     font-size: 1.2em;
     line-height: 1.5em;
     font-family: 'Open Sans', sans-serif;
-    width: 70%;
+    width:80%;
     font-weight: 400;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
 }
 button{
+    cursor: pointer;
     color: hsl(257, 40%, 49%);
     font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
@@ -57,7 +58,18 @@ button{
     border-radius: 3em;
     height: 6.5%;
     width: 20%;
+    box-shadow: 2px 2px 8px 4px #3e3e3e46;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    transform: scale(1.06);
 }
 .text-container{
-    margin-top: -5em;
+    margin-top: -8em;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 15%;
 }
