@@ -7,69 +7,199 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: hsl(257, 40%, 49%) url("images/bg-desktop.svg");
-    background-size: cover; 
     height: 100vh;
-    color: #fff;
+    width: 100vw;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-desktop.svg');
+    background-size: cover;
 }
 header{
+    height: 15%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    height: 10%;
-    width: 90%;
+    align-items: flex-end;
+    
+}
+header > img{
+    width: 13%;
+    margin-left: 3em;
 }
 main{
+    height: 85%;
+    width: 100%;
     display: flex;
-    gap: 7em;
-    height: 75%;
-    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
 }
 section{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width:50%;
 }
-h1{
-    font-size: 3em;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.2em;
-    width: 80%;
-    margin-bottom: .7em;
-}
-p{
-    font-size: 1.2em;
-    line-height: 1.5em;
-    font-family: 'Open Sans', sans-serif;
-    width:80%;
-    font-weight: 400;
-    margin-bottom: 1.2em;
-}
-button{
-    cursor: pointer;
-    color: hsl(257, 40%, 49%);
-    font-size: 1.2em;
-    font-family: 'Open Sans', sans-serif;
-    border:none;
-    border-radius: 3em;
-    height: 6.5%;
-    width: 20%;
-    box-shadow: 2px 2px 8px 4px #3e3e3e46;
-    transition: .2s ease-in-out;
-}
-button:hover{
-    transform: scale(1.06);
+.img-container > img{
+    width: 90%;
+    margin-left: 3em;
 }
 .text-container{
-    margin-top: -8em;
+    justify-content:space-around ;
 }
-footer{
+ h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    font-weight: 600;
+}   
+p{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+button{
     display: flex;
+    justify-content: center;
     align-items: center;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: .8em 3em;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.209);
+    font-family: 'Poppins';
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+    
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+.btn-container{
+    width: 100%;
+}
+.text{
+    height: 30%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.icons{
+    width: 75%;
+    display: flex;
     justify-content: flex-end;
-    height: 15%;
+    align-items: flex-end;
+}
+.icons ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+
+}
+.icons  img{
+    width: 70%;
+    cursor: pointer;
+    
+}
+.icons li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2em;
+    border-radius: 8000px;
+    transition: .2s ease-in-out;
+}
+
+.icons li:hover{
+    box-shadow: 0px 0px 2px 4px #ffffff47;
+}
+
+@media  screen and (max-width:1280px) {
+    header > img{
+        width: 15%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .text{
+        gap: 1.2em;
+    }
+}
+@media  screen and (max-width:900px){
+    header > img{
+        width: 20%;
+        margin-left: 0em;
+    }
+    .img-container img{
+        width: 100%;
+        margin-left: 0em;
+    }
+    .text{
+        width: 90%;
+    }
+    .icons{
+        width: 90%;
+    }
+}
+@media  screen and (max-width:780px){
+    body{
+        background-image: url('images/bg-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 160vh;
+        overflow-x: hidden;
+    }
+    header{
+        height: 10%;
+    }
+    header img{
+        width: 40%;
+        margin-left: 3em;
+    }
+    main{
+        flex-direction: column;
+        height: 90%;
+        gap: 0em;
+    }
+    section{
+        height: 50%;
+        width: 80%;
+    }
+    .text-container{
+        height: 40%;
+        justify-content: space-between;
+    }
+    .text{
+        text-align: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .btn-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .icons{
+        display: flex;
+        width: 90%;
+        height: 30%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .icons img{
+        width: 110%;
+    }
+    .icons ul{
+        gap: 10px;
+        width: 40%;
+    }
 }
